@@ -1,4 +1,8 @@
 pipeline {
+    environment {
+    registry = "madavi/inspired"
+    registryCredential = 'dockerhub'
+}
   agent any
   tools {nodejs "nodejs"}
   stages {
