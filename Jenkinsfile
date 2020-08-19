@@ -66,7 +66,7 @@ pipeline {
   }
   environment {
     registry = 'madavi/inspired'
-    registryCredential = 'dockerId'
+    registryCredential = 'dockerhub'
     dockerImage = ''
     dockerImageLatest = ''
   }
