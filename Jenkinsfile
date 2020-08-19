@@ -1,8 +1,4 @@
 pipeline {
-    environment {
-    registry = "madavi/inspired"
-    registryCredential = 'dockerhub'
-}
   agent any
   tools {nodejs "nodejs"}
   stages {
@@ -69,7 +65,7 @@ pipeline {
 
   }
   environment {
-    registry = 'metanitesh/simple-api'
+    registry = 'madavi/inspired'
     registryCredential = 'dockerId'
     dockerImage = ''
     dockerImageLatest = ''
